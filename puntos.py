@@ -10,6 +10,10 @@ class Puntos(Turtle):
         self.color('purple')
         self.shapesize(0.5,0.5)
         self.speed('fastest')
+        self.new_location
+    
+    @property
+    def new_location(self):
         x = randint(-280, 280)
         y = randint(-280,280)
         self.goto(x,y)
