@@ -11,11 +11,18 @@ class Culebrita:
     def snake_init(self):
         #* Creación del cuerpo principal
         for i in coo_seg:
-            segment = Turtle("square")
-            segment.color("white")
-            segment.pu()
-            segment.goto(i)
-            self.segments.append(segment)
+            self.append_block(i)
+    
+    def append_block(self,i):
+        segment = Turtle("square")
+        segment.color("white")
+        segment.pu()
+        segment.goto(i)
+        self.segments.append(segment)
+    
+    @property
+    def grow_snake(self):
+        self.append_block(self.segments[-1].position())
     
     def move(self):
         #* Movimiento unificado de los tres segmentos
