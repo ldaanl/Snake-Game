@@ -1,8 +1,10 @@
 from snake import Culebrita
-from turtle import Screen, Turtle
+from turtle import Screen
+from puntos import Puntos
 import time
 
 snake = Culebrita()
+puntos = Puntos()
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
