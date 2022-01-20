@@ -9,7 +9,7 @@ class Culebrita:
         self.head = self.segments[0]
     
     def snake_init(self):
-        #* Cuerpo principal
+        #* Creación del cuerpo principal
         for i in coo_seg:
             segment = Turtle("square")
             segment.color("white")
